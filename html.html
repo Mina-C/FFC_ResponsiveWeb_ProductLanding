@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <!-- 
@@ -9,8 +11,9 @@ For now, the test suite only works in Chrome! Please read the README below in th
 - The freeCodeCamp Team 
 
 -->
+
 <head>
-  <title>Product Landing Page - Happy Enzyme</title>
+  <title>Product Landing Page - Happiness Delivery</title>
 </head>
 <body>
   <header id="header">
@@ -20,12 +23,14 @@ For now, the test suite only works in Chrome! Please read the README below in th
         Happiness Delivery
       </div>
       <nav id="nav-bar">
-        <div class="nav-link" id="menu1"><a href="#info">Info</a></div>
-        <div class="nav-link" id="menu2"><a href="#features">Features</a></div>
-        <div class="nav-link" id="menu3"><a href="#subscription">Subscription</a></div>
+        <div id="menu1"><a class="nav-link" href="#info">Info</a></div>
+        <div id="menu2"><a class="nav-link" href="#features">Features</a></div>
+        <div id="menu3"><a class="nav-link" href="#subscription">Subscription</a></div>
       </nav>
     </div>
-    <div id="free-trial"><h2>Try free-trial of "Happiness Delivery"</h2>
+    <div id="free-trial">
+      <h2>Try free-trial of "Happiness Delivery"</h2>
+      <h3 style="color:#4E342E">As soon as you submit your email, you will get the today's content.</h3>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input type="email" id="email" name="email" placeholder="Enter your email">
         <input type="submit" id="submit" value="Submit" ></input>
@@ -35,14 +40,64 @@ For now, the test suite only works in Chrome! Please read the README below in th
   </header>
   
   <main>
-    <br><br><br><br><br><br><br>
-    <div id="info">Why we do, how it works</div>
-    <br><br><br><br><br><br><br>
-    <div id="features">What is the contents about</div>
-    <iframe id="video" src="https://youtu.be/F1OxrcUr0J0"></iframe>
-    <br><br><br><br><br><br><br>
-    <div id="subscription">Price per period</div>
-    <br><br><br><br><br><br><br>
+    <div id="main-container">
+      <h3>Info</h3>
+      <div id="info">
+        <p>How do you feel about today's fast-paced society? Exhausted? Stressful? Unhappy? For the balance of the life or to slow down the speed of the life, some people try to make time for training or meditating.</>
+        <p>I am a fan of collecting good articles, warm-hearted story, chilling music and etc. And I have been sharing with my family and friends. They told me it is a refreshment of a day. Therefore I want to share to you all with quality contents.</p>
+        <p>I want to make the world more happier!!</p>
+      </div>
+
+
+      <div id="features">
+      <h3>Features</h3>
+        <div id="feature"><img id="f-img" src="https://image.flaticon.com/icons/svg/174/174285.svg" alt="coffee" >
+          <h4>Refreshing contents like a cup of tea</h4>
+        </div>
+        <div id="feature"><img id="f-img" src="https://image.flaticon.com/icons/svg/174/174242.svg" alt="email" >
+          <h4>Everyday-delivery by email</h4></div>
+        <div id="feature"><img id="f-img" src="https://image.flaticon.com/icons/svg/174/174249.svg" alt="World" >
+          <h4>World-wide Contents</h4></div>
+ 
+        <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/83oWa0AGheM" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+      </div>
+       
+      <h3>Subscription</h3>
+      <div id="subscription">
+        <div id="sub">
+          <div id="price">1 MONTH</div>
+          <h5>Subscribing</h5>
+          <h5>Happiness Delivery</h5>
+          <h5>For 30 days</h5>
+          <h3>Price: 10 EUR</h3>
+          <form action="link">
+            <input id="link-sub" type="submit" value="Select"/>
+          </form>
+        </div>
+        <div id="sub">
+          <div id="price">1 YEAR</div>
+          <h5>Subscribing</h5>
+          <h5>Happiness Delivery</h5>
+          <h5>For 365 days</h5>
+          <h3>Price: 100 EUR</h3>
+          <form action="link">
+            <input id="link-sub" type="submit" value="Select"/>
+          </form>
+        </div>
+        <div id="sub">
+          <div id="price">FOREVER</div>
+          <h5>Subscribing</h5>
+          <h5>Happiness Delivery</h5>
+          <h5>For 30 days</h5>
+          <h3>Price: 200 EUR</h3>
+          <form action="link">
+            <input id="link-sub" type="submit" value="Select"/>
+          </form>
+        </div>
+      </div>
+    </div>
+
   </main>
-  <footer></footer>
+  <footer ></footer>
 </body>
